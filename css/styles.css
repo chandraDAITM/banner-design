@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../image/banner5.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    width: 80%;
+    margin: 10px auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* width: 200px; */
+    width: auto;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.logo h2 {
+    font-size: 40px;
+    color: #485fdf;
+    font-family: sans-serif;
+    border-radius: 7px;
+    border: 3px solid aliceblue;
+    padding: 15px;
+    text-shadow: 2px 2px 2px aliceblue;
+}
+
+.nav_links {
+    width: 500px;
+    /*400px;....it is bcuz of we take icon margin left */
+    padding: 10px;
+
+}
+
+.nav_links ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.nav_links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 14px;
+    position: relative;
+}
+
+.nav_links ul li {
+    margin-left: 12px;
+}
+
+.nav_links ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.nav_links ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 32px;
+    display: none;
+}
+
+.nav_links ul ul li {
+    width: 300px;
+    /*200;......... it is becuz of padding in hover*/
+}
+
+.nav_links ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+.nav_links ul li:hover > ul {
+    display: block;
+}
+
+.nav_links ul li a:hover {
+    /*color: rgb(203, 249, 255);*/
+    font: weight 700px;
+    background-color: #485fdf;
+    border-radius: 10%;
+    padding: 7px;
+}
+
+.search {
+    width: 330px;
+}
+
+.srch {
+    width: 200px;
+    height: 40px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    background: transparent;
+    border: 1px solid #485fdf;
+    border-right: none;
+    padding: 10px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    float: left;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background-color: #485fdf;
+    /* border-radius: 7px; */
+    color: aliceblue;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid #485fdf;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.text-box {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    color: aliceblue;
+    display: flex;
+}
+
+.text-box h1 {
+    font-size: 55px;
+}
+
+.text-box p {
+    width: 80%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn1 {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn1 a {
+    text-decoration: none;
+    color: #485fdf;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: Berlin Sans FB Demi;
+    transition: 0.5s;
+}
+
+.btn1:hover {
+    background-color: #485fdf;
+}
+
+.btn1:hover > a {
+    color: aliceblue;
+}
+
+span {
+    color: #485fdf;
+    font-size: 60px;
+}
+
+.login {
+    width: 250px auto;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    /* height:250px; */
+    /* height:260px; */
+    border-radius: 10px;
+    border: 1px solid #485fdf;
+    /*padding-right: 0px;*/
+
+}
+
+.login h3 {
+
+    color: #485fdf;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 7px;
+    padding: 7px;
+}
+
+.login p {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+.login input {
+    width: 230px;
+    margin-top: 15px;
+    background: transparent;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #485fdf;
+    color: aliceblue;
+    font-size: 14px;
+    letter-spacing: 1;
+}
+
+.login input:focus {
+    outline: none;
+
+}
+
+.btn2 {
+    width: 230px;
+    text-align: center;
+    color: aliceblue;
+    background: #485fdf;
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a .btn2 {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    text-shadow: 2px 2px 2px #485fdf;
+}
+
+a .btn2:hover {
+    background: aliceblue;
+    text-shadow: 2px 2px 2px #485fdf;
+    font-weight: bolder;
+    color: black;
+    /* color: #485fdf; */
+}
+
+.signup {
+    width: 230px;
+    font-family: sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.sign {
+    width: 150px;
+    height: 25px;
+    border-radius: 7px;
+    background: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 7px;
+    top: 0px;
+
+    /* padding:20px; */
+    /* padding-left: 20px;
+  padding-right: 20px; */
+}
+
+.sign:hover {
+    width: 151px;
+    height: 26px;
+    box-shadow: 2px 2px 3px #485fdf;
+    
+}
+
+
+.sign a {
+    text-decoration: none;
+    color: #485fdf;
+    /* font-size: 15px */
+    font-weight: 700;
+    font-style: Berlin Sans FB Demi;
+    transition: 0.5s;
+}
+
+.lgw {
+    margin-top: 5px;
+    width: 230px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.icon i {
+    margin-top: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: aliceblue;
+    /* align-items: center;
+  justify-content: space-around;
+  color: aliceblue; */
+}
+
+.icon i:hover {
+    color: #485fdf
+}
+
+
+/* ____________________________________________ */
+
+
+.service {
+    width: 100%;
+    background: #485fdf;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+.service h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #777;
+}
+
+.row {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_col {
+    flex-basis: 28%;
+    padding: 20px;
+    border-radius: 10px;
+    background: aliceblue;
+    text-align: left;
+    display: flex;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    top: 0;
+    position: relative;
+    transition: 0.5s;
+}
+
+.service_col h3 {
+    font-size: 20px;
+    color: #485fdf;
+    padding-bottom: 10px;
+}
+
+.service_col i {
+    font-size: 40px;
+    color: #485fdf;
+    margin-left: 5px;
+    margin-right: 20px;
+    top: 0;
+    /* its bcz top:-10px;  */
+    /* margin-top:5px; */
+}
+
+.service_col:hover {
+    top: -15px;
+    box-shadow: 5px 5px 20px 5px black;
+}
+
+#row2 {
+    margin-top: 0;
+}
+/*---------------------------------testimonial______________*/
+
+.testimonial{
+    width:100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.testimonial h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.testimonial p{
+    color:#777;
+}
+
+.testimonial-col{
+    flex-basis: 30%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px 3px black;
+}
+
+.testimonial-col img{
+    width: 90px;
+    height: 90px;
+    border: 3px solid aliceblue;
+    border-radius: 50%;
+    top: -40px;
+    position: absolute;
+    
+}
+.testimonial-col p{
+    margin-top: 60px;
+    color: aliceblue;
+    margin-bottom: 15px;
+    /* margin-top: 15px; */
+}
+
+.testimonial-col h3{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.testimonial-col h5{
+    color: #485fdf;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.testimonial-col:hover{
+    transform: scale(1.3);
+    z-index: 10000;
+    background-color: #485fdf;
+}
+
+.testimonial-col:hover  h5{
+    color: black;
+}
